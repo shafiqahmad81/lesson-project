@@ -10,9 +10,390 @@
 </head>
 
 <body>
-  <div>
-    <h1 class="text-4xl font-bold">lesson project</h1>
-  </div>
+
+  <!-- Header section -->
+  <header class="bg-backgound-gray-light pt-9 relative">
+    <div class="container">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="index.html" class="text-2xl text-primary leading-[34px] font-bold font-sen">Lesson<span
+              class="dot">.</span></a>
+        </div>
+        <div class="hidden md:inline-flex items-center gap-16">
+          <nav>
+            <ul class="flex items-center gap-[41px] mt-[9px]">
+              <li><a data-title="Home"
+                  class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                  href="#">Home <span
+                    class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+              </li>
+              <li><a data-title="Courses"
+                  class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                  href="#">Courses
+                  <span
+                    class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+              </li>
+              <li><a data-title="Pricing"
+                  class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                  href="#">Pricing <span
+                    class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+              </li>
+              <li><a data-title="Reviews"
+                  class="mr-[3px] text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                  href="#">Reviews <span
+                    class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="">
+            <a href="#" class="btn w-[144px] flex items-center justify-center tracking-[1px]">Sign Up</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+          </svg>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden bg-backgound-gray-light absolute top-10 left-0 right-0 h-screen">
+          <div class="container">
+            <nav class="relative">
+              <ul class="flex flex-col items-center gap-4 ">
+                <li><a data-title="Home"
+                    class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                    href="#">Home <span
+                      class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+                </li>
+                <li><a data-title="Courses"
+                    class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                    href="#">Courses
+                    <span
+                      class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+                </li>
+                <li><a data-title="Pricing"
+                    class="text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                    href="#">Pricing <span
+                      class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+                </li>
+                <li><a data-title="Reviews"
+                    class="mr-[3px] text-base leading-7 inline-block after:font-semibold after:block after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transition-all after:duration-300 hover:font-semibold transition-all duration-300 relative group"
+                    href="#">Reviews <span
+                      class="absolute left-0 bottom-px w-3 h-0.5 bg-backgound-gray-light rounded group-hover:bg-primary transition-all duration-300"></span></a>
+                </li>
+              </ul>
+              <div class="absolute top-0 right-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="bg-backgound-gray-light py-16">
+    <div class="container">
+      <div class="flex items-center justify-between">
+        <div class="w-[40.170%] relative">
+          <div class="rounded-[20px]">
+            <img src="./src/image/lesson-1.jpg" alt="Lesson image">
+          </div>
+          <div class="w-[270px] p-6 bg-white shadow-4xl rounded-xl absolute bottom-12 -right-[100px]">
+            <div class="flex items-center gap-4">
+              <div>
+                <div class="w-12 h-12 bg-[#FFF9E8] flex items-center justify-center rounded-full">
+                  <img src="./src/image/orion-page.png" alt="orion image">
+                </div>
+              </div>
+              <div>
+                <span class="text-sm leading-[26px] inline-block">20 Courses</span>
+                <span class="text-lg leading-7.5 text-primary font-semibold inline-block">UI/UX Design</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 mt-3.5">
+              <div>
+                <div class="w-12 h-12 bg-[#FCEFFF] flex items-center justify-center rounded-full">
+                  <img src="./src/image/orion-code.png" alt="orion image">
+                </div>
+              </div>
+              <div>
+                <span class="text-sm leading-[26px] inline-block">20 Courses</span>
+                <span class="text-lg leading-7.5 text-primary font-semibold inline-block">Development</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 mt-3.5">
+              <div>
+                <div class="w-12 h-12 bg-[#EBEAFF] flex items-center justify-center rounded-full">
+                  <img src="./src/image/orion-megaphone.png" alt="orion image">
+                </div>
+              </div>
+              <div>
+                <span class="text-sm leading-[26px] inline-block">30 Courses</span>
+                <span class="text-lg leading-7.5 text-primary font-semibold inline-block">Marketing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[40.170%] mt-1">
+          <h1 class="text-[58px] text-primary font-bold font-sen leading-[68px] -tracking-[1.1px]">Learn without limits
+            and spread
+            knowledge.</h1>
+          <p class="text-lg leading-7.5 mt-[22px]">Build new skills for that “this is my year” feeling with courses,
+            certificates, and degrees from
+            world-class universities and companies. </p>
+          <div class="flex items-center gap-7 mt-[38px]">
+            <button class="btn w-[180px] h-16 text-lg leading-7.5">See Courses</button>
+            <div class="flex items-center gap-3.5">
+              <button
+                class="w-10 h-10 cursor-pointer bg-white rounded-full flex items-center justify-center shadow-3xl">
+                <img src="./src/image/play.svg" alt="play">
+              </button>
+              <span class="text-lg leading-7.5 font-semibold text-primary">Watch Video</span>
+            </div>
+          </div>
+          <div class="mt-12">
+            <span class="text-lg leading-7.5 ">Recent engagement</span>
+            <div class="flex gap-7 mt-2">
+              <div class="flex items-end gap-3.5">
+                <span class="text-[44px] leading-[54px] text-primary font-bold font-sen">50K</span>
+                <span class="text-lg leading-7.5 mb-1">Students</span>
+              </div>
+              <div class="flex items-end gap-3">
+                <span class="text-[44px] leading-[54px] text-primary font-bold font-sen">70+</span>
+                <span class="text-lg leading-7.5 mb-1">Courses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our popular courses -->
+  <section class="mt-[200px] mb-[159px]">
+    <div class="container">
+      <div class="relative z-20">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2>Our popular courses</h2>
+            <p class="text-lg leading-7.5 max-w-[458px] mt-4">Build new skills with new trendy courses and shine for the
+              next
+              future career.
+            </p>
+          </div>
+          <div class=" flex items-center gap-[18px] mt-[3px]">
+            <div
+              class="relative w-10 h-10 border border-yellow rounded-full flex items-center justify-center hover:bg-yellow transition-all duration-500 group">
+              <button class="swiperCourses-button-prev cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  class="h-5 w-full stroke-[#FFB900] group-hover:stroke-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="relative w-10 h-10 border border-yellow rounded-full flex items-center justify-center bg-yellow hover:bg-yellow transition-all duration-500 group">
+              <button class="swiperCourses-button-next cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  class="h-5 w-full stroke-white group-hover:stroke-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[55px] -ml-[30px] -mr-[30px]">
+          <div class="swiper mySwiperCourses">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide group">
+                <div class="rounded-xl bg-white shadow-5xl transition-shadow duration-300">
+                  <div class="rounded-t-xl overflow-hidden">
+                    <img class="h-[278px]" src="./src/image/lesson-2.jpg" alt="lesson-image">
+                  </div>
+                  <div class="pl-[22px] pr-[21px] pb-[22px] pt-4 border-l border-r border-b rounded-b-xl border-white">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">Basic web design</span>
+                      <div class="flex items-center gap-1.5">
+                        <div>
+                          <img src="./src/image/star.png" alt="star">
+                        </div>
+                        <span class="text-base leading-7 text-yellow pt-[3px]">4.5</span>
+                      </div>
+                    </div>
+                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+                    <div class="flex items-center justify-between mt-3">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">$120.75</span>
+                      <a href="#" class="btn w-[118px] flex items-center justify-center bg-yellow">Book
+                        Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="rounded-xl bg-white group-hover:shadow-5xl transition-shadow duration-300">
+                  <div class="rounded-t-xl overflow-hidden">
+                    <img class="h-[278px]" src="./src/image/lesson-3.jpg" alt="lesson-image">
+                  </div>
+                  <div
+                    class="pl-[22px] pr-[21px] pb-[22px] pt-4 border-l border-r border-b rounded-b-xl border-[#E2DFDA] group-hover:border-white">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">UI/UX design</span>
+                      <div class="flex items-center gap-1.5">
+                        <div>
+                          <img src="./src/image/star.png" alt="star">
+                        </div>
+                        <span class="text-base leading-7 text-yellow pt-[3px]">4.5</span>
+                      </div>
+                    </div>
+                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+                    <div class="flex items-center justify-between mt-3">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">$120.75</span>
+                      <a href="#" class="btn w-[118px] flex items-center justify-center ">Book
+                        Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="rounded-xl bg-white group-hover:shadow-5xl transition-shadow duration-300">
+                  <div class="rounded-t-xl overflow-hidden">
+                    <img class="h-[278px]" src="./src/image/lesson-4.jpg" alt="lesson-image">
+                  </div>
+                  <div
+                    class="pl-[22px] pr-[21px] pb-[22px] pt-4 border-l border-r border-b rounded-b-xl border-[#E2DFDA] group-hover:border-white">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">Web App design</span>
+                      <div class="flex items-center gap-1.5">
+                        <div>
+                          <img src="./src/image/star.png" alt="star">
+                        </div>
+                        <span class="text-base leading-7 text-yellow pt-[3px]">4.5</span>
+                      </div>
+                    </div>
+                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+                    <div class="flex items-center justify-between mt-3">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">$120.75</span>
+                      <a href="#" class="btn w-[118px] flex items-center justify-center ">Book
+                        Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="rounded-xl bg-white group-hover:shadow-5xl transition-shadow duration-300">
+                  <div class="rounded-t-xl overflow-hidden">
+                    <img class="h-[278px]" src="./src/image/lesson-4.jpg" alt="lesson-image">
+                  </div>
+                  <div
+                    class="pl-[22px] pr-[21px] pb-[22px] pt-4 border-l border-r border-b rounded-b-xl border-[#E2DFDA] group-hover:border-white">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">Basic web design</span>
+                      <div class="flex items-center gap-1.5">
+                        <div>
+                          <img src="./src/image/star.png" alt="star">
+                        </div>
+                        <span class="text-base leading-7 text-yellow pt-[3px]">4.5</span>
+                      </div>
+                    </div>
+                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+                    <div class="flex items-center justify-between mt-3">
+                      <span class="text-lg leading-7.5 font-semibold text-primary">$120.75</span>
+                      <a href="#" class="btn w-[118px] flex items-center justify-center ">Book
+                        Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student of Web Design -->
+  <section class="bg-backgound-dark-light py-24">
+    <div class="container">
+      <div class="swiper mySwiperStudent">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex justify-between">
+              <div>
+                <img src="./src/image/student.png" alt="student">
+                <span class="text-2xl text-[#F7F7F7] leading-[34px] font-bold font-sen mt-[18px] inline-block">Peter
+                  Moor</span>
+                <p class="text-[#BFBCB2] mt-1">Student of Web Design</p>
+              </div>
+              <div>
+                <div class="-ml-[30px]">
+                  <img src="./src/image/vector.png" alt="vector">
+                </div>
+                <p class="text-[26px] leading-10 italic text-white max-w-[740px]">
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but
+                  these certificates also bring me closer to my career goals by validating the skills I've learned."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-between">
+              <div>
+                <img src="./src/image/student.png" alt="student">
+                <span class="text-2xl text-[#F7F7F7] leading-[34px] font-bold font-sen mt-[18px] inline-block">Peter
+                  Moor</span>
+                <p class="text-[#BFBCB2] mt-1">Student of Web Design</p>
+              </div>
+              <div>
+                <div class="-ml-[30px]">
+                  <img src="./src/image/vector.png" alt="vector">
+                </div>
+                <p class="text-[26px] leading-10 italic text-white max-w-[740px]">
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but
+                  these certificates also bring me closer to my career goals by validating the skills I've learned."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-between">
+              <div>
+                <img src="./src/image/student.png" alt="student">
+                <span class="text-2xl text-[#F7F7F7] leading-[34px] font-bold font-sen mt-[18px] inline-block">Peter
+                  Moor</span>
+                <p class="text-[#BFBCB2] mt-1">Student of Web Design</p>
+              </div>
+              <div>
+                <div class="-ml-[30px]">
+                  <img src="./src/image/vector.png" alt="vector">
+                </div>
+                <p class="text-[26px] leading-10 italic text-white max-w-[740px]">
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but
+                  these certificates also bring me closer to my career goals by validating the skills I've learned."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
