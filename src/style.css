@@ -69,7 +69,7 @@ body{
 
 @layer base{
     h2{
-        @apply text-[38px] leading-12 font-sen font-bold -tracking-[0.7px]
+        @apply text-[38px] leading-12 text-primary font-sen font-bold -tracking-[0.7px]
     }
 }
 
