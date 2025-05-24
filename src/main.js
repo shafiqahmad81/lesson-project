@@ -18,10 +18,20 @@ const swiper = new Swiper('.mySwiperCourses', {
 });
 const swiperstudent = new Swiper(".mySwiperStudent", {
   modules: [Navigation, Pagination],
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      spaceBetween: 30,
-      loop: true,
-    });
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    spaceBetween: 30,
+    loop: true,
+});
+const swiperblog = new Swiper(".mySwiperBlog", {
+  modules: [Navigation, Pagination],
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 3,
+    spaceBetween: 33,
+    loop: true,
+});

@@ -46,10 +46,10 @@
 .swiperCourses-button-next {
   @apply top-1/2 right-auto z-50;
 }
-.swiper-pagination{
+.mySwiperStudent > .swiper-pagination{
   @apply w-auto!
 }
-.swiper-pagination{
+.mySwiperStudent > .swiper-pagination{
   @apply -bottom-2! -left-[2px]!
 }
 .swiper-pagination-bullet{
@@ -60,6 +60,12 @@
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
   @apply mx-[3px]!
+}
+.mySwiperBlog{
+  @apply pb-12 px-8
+}
+.mySwiperBlog > .swiper-pagination{
+  @apply -bottom-1!
 }
 
 
